@@ -253,6 +253,9 @@ footer a {
 	.form-container{
 		width: 100%;
 	}
+	.container{
+		width: 350px;
+	}
 	
 }
 @media screen and (min-width:440px){
