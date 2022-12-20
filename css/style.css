@@ -253,7 +253,7 @@ footer a {
 	}
 	.form-container{
 		width: 100%;
-	
+	}
 }
 @media screen and (min-width:440px){
 	.overlay-container{
@@ -264,5 +264,4 @@ footer a {
 		height: 0px;
 		width: 0;
 	}
-	
 }
