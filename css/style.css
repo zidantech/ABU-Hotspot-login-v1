@@ -221,6 +221,11 @@ img{
 	height: 130px;
 }
 
+.col-sm-3{
+	height: 60%;
+}
+
+
 
 footer {
     background-color: #222;
