@@ -2,9 +2,12 @@
 	box-sizing: border-box;
 }
 
-body {
+html{
 	background: url("../img/img.jpg") no-repeat center center fixed;
 	background-size: cover;
+}
+
+body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -225,7 +228,9 @@ img{
 	height: 60%;
 }
 
-
+.container-footer{
+	
+}
 
 footer {
     background-color: #222;
