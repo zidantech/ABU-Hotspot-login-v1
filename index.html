@@ -12,7 +12,7 @@
 </head>
 <body>
     $(if chap-id)
-    <form name="sendin" action="$(link-login-only)" method="post">
+    <form class="hidden" name="sendin" action="$(link-login-only)" method="post">
         <input type="hidden" name="username" />
         <input type="hidden" name="password" />
         <input type="hidden" name="dst" value="$(link-orig)" />
