@@ -1,90 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Login</title>
+    <meta charset="UTF-8">
+    <title>...::: ABU NIGERIA Hotspot : Login :::..</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <link rel="stylesheet" href="css/style_n.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="">
-	<h2>ABU HOTSPOT</h2>
-	<div class="container" id="container">
-		<div class="form-container sign-up-container">
-			<form action="#">
-				<h1>Create Account</h1>
-				<span>or use your email for registration</span>
-				<input type="text" placeholder="Name" />
-				<input type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
-				<button>Sign Up</button>
-			</form>
-		</div>
-		<div class="form-container sign-in-container">
-			<form action="#">
-				<div class="logo hidden"><img src="img/abu_logo.png" alt=""></div>
-				<h1>Sign in</h1>
+<body>
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post">
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+    </form>
+
+    <script type="text/javascript" src="/md5.js"></script>
+    <script type="text/javascript">
+        
+        function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+        }
+        
+    </script>
+    $(endif)
+
+    <div style="margin:10px auto";>$(if trial == 'yes')Free trial available, <a style="color: #FF8080"href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif)<p align="center">
+
+    </div>
+    <h2>AHMADU BELLO UNIVERSITY ZARIA INTERNET SERVICE</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form name="login" action="$(link-login-only)" method="post"
+                $(if chap-id) onSubmit="return doLogin()" $(endif)>
+                <input type="hidden" name="dst" value="$(link-orig)" />
+                <input type="hidden" name="popup" value="true" />
+                <h1>Sign in</h1>
 				<p>Welcome, Please enter Your details</p>
-				<input type="username" placeholder="Username" />
-				<input type="password" placeholder="Password" />
-				<a href="#">Change your password?</a>
-				<button>Sign In</button>
-			</form>
-		</div>
-		<div class="overlay-container">
-			<div class="overlay">
-				<div class="overlay-panel overlay-right">
-					<div class="logo"><img src="img/abu_logo.png" alt=""></div>
-				
-					<div class="col-sm-3 text-justify text-" style="color: #fff">
-						<!-- <strong><u>Disclaimer!!!</u></strong> -->
-						<marquee behavior="scroll" scrollamount="5.0" style="list-style-position:inside;"  width="210"  height="460" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
-							<b>
-								<font color="#FF0000;">
-									<strong style="margin-left:10px;"><u>Notice</u></strong><p></p>
-				
-								</font></b>
-							<div><b><font color="#5bcad7">Account holders will be held responsible for any legal or illegal activity performed through their accounts. </font></b></div>
-				
-							<br />
-							<p><b><font color="#FF0000"><br />
-							</font>
-							</b>
-				
-								<strong style="margin-left:10px;"><u>	Login Credential</u></strong>
-							</p>
-							<p></p>
-				
-							<div style="margin-left:10px;">
-								Staff Can Subscribe for Internet Login Details at The NECO ICT DEPARTMENT. </div>
-							<br />
-				
-							<strong style="margin-left:10px;"><u>Login Problem</u></strong><p></p>
-				
-							<div style="margin-left:10px;">If you have problems with your Internet login, Come with your ID card to NECO ICT DEPARTMENT	 </div>
-				
-							<br />
-							<strong style="margin-left:10px;"><u>Warning</u></strong><p></p>
-				
-							<div style="margin-left:10px;"> Please endeavor to Used The Internet Wisely and Secure your Login Credentials safely  	 </div>
-				
-							<br />
-							<strong style="margin-left:10px;"><u>Futher Assistance</u></strong><p></p>
-				
-							<div style="margin-left:10px;"> Please call: Mon - Fri   8am-4pm:
-								<li>08069232760</li>
-								<li>08126886938</li>
-							   
-							   </div></marquee>
-					</div>
-					<div class="container-footer">
-						fff
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</body>
-</html>
+                <input class="form-control"  name="username" type="text" value="$(username)" />
+                <input class="form-control"  type="password" name="password" />
+                <a href="#">Change your password?</a>
+                <button>Sign In</button>
+                <!--<button class="btn btn-info" type="button">Login</button>-->
+                <!-- <input type="image" src="button.png"/> -->
+                        
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <div class="Logo">
+                        <img src="img/abu_logo.png" alt="ABU Logo">
+                        <!-- <marquee><p style="font-size: 20px; color: #EE9A4D">!!! KNOWLEDGE FOR SELF RELIANCE !!!</p></marquee>-->
+                        <!-- <h2 class="text-center" style="color: #fff">NECO NIGERIA INTERNET SERVICE</h2> -->
+                    </div>
+                    <div class="col-sm-3 text-justify text-" style="color: #fff">
+                        <!-- <strong><u>Disclaimer!!!</u></strong> -->
+                        <marquee id="marque" behavior="scroll" scrollamount="3.0" style="list-style-position:inside;"  direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                            <p class="marquee-H" style="color: red;">NOTICE</p>
+
+                            <p class="marquee-NB">Account holders will be held responsible for any legal or illegal activity performed through their accounts. </p>
+
+                            <p class="marquee-H">Login Credential</p>
+
+                            <p class="marquee-BD">Staff Can Subscribe for Internet Login Details at The NECO ICT DEPARTMENT. </p>
+
+                            <p class="marquee-H">Login Problem</p>
+
+                            <p class="marquee-BD">If you have problems with your Internet login, Come with your ID card to NECO ICT DEPARTMENT</p>
+
+                            <p class="marquee-H">Warning</p>
+
+                            <p class="marquee-BD"> Please endeavor to Used The Internet Wisely and Secure your Login Credentials safely</p>
+                            <p class="marquee-H">Futher Assistance</p>
+                            <p> Please call: Mon - Fri   8am-4pm:
+                                <li style="color: #000000">08069232760</li>
+                                <li style="color: #000000">08126886938</li>
+                            </p>
+                        </marquee>
+                    </div>
+                    
+                    <div class="links">
+                        <a href="#" class="link-btn">PORTAL</a>
+                        <a href="#" class="link-btn">INTERNET REQUEST</a>
+                        <a href="#" class="link-btn">ABU Mail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

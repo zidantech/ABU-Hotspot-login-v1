@@ -49,7 +49,7 @@ a {
 button {
 	border-radius: 20px;
 	border: 1px solid #01ff01;
-	background-color: #01ff01;
+	background-color: #00a700;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -73,7 +73,7 @@ button.ghost {
 }
 button:hover {
 	background-color: #fff;
-	color: #00ff00;
+	color: #00a700;
 }
 
 form {
@@ -201,6 +201,11 @@ input {
 	transform: translateX(0);
 }
 
+#marque{
+	width: 100%;
+	height: 300px ;
+}
+
 .container.right-panel-active .overlay-right {
 	transform: translateX(20%);
 }
@@ -223,14 +228,46 @@ img{
 	width: 130px;
 	height: 130px;
 }
-
-.col-sm-3{
-	height: 60%;
+marquee p{
+	color: black;
+}
+.marquee-H{
+	color: #000000;
+	border-bottom: solid 1px red;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+}
+.marquee-NB{
+	text-align: center;
+	color: #1500ff;
+}
+.marquee-BD{
+	color: black;
+}
+.links{
+	height: 120px;
+	display: flex;
+}
+.link-btn{
+	width: 100%;
+	height: 30px ;
+	margin: auto;
+	margin-bottom: 0;
+	border: solid 1px #01ff01;
+	border-bottom: none;
+	color: #ffffff;
+	background-color: #00a700;
+	border-radius: 10px 10px 0 0;
+	padding: 0 5px;
+	font-size: 11px;
+	font-weight: bold;	
+}
+.link-btn:hover{
+	background-color: #fff;
+	color: #00a700
 }
 
-.container-footer{
-	
-}
 
 footer {
     background-color: #222;
