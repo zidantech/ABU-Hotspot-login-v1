@@ -3,10 +3,87 @@
 }
 
 html{
-	background: url("../img/img.jpg") no-repeat center center fixed;
-	background-size: cover;
+	/* background: url("../img/img.jpg") no-repeat center center fixed;
+	background-size: cover; */
 
-	}
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	-webkit-animation: slide 35s infinite;
+			animation: slide 35s infinite;
+}
+@-webkit-keyframes slide {
+	0% {
+		background-image: url("../img/abu_pic/slider.jpg");
+	  }
+	  10% {
+		background-image: url("../img/abu_pic/slider.jpg");
+	  }
+	  20% {
+		background-image: url("../img/abu_pic/slider1.jpg");
+	  }
+	  30% {
+		background-image: url("../img/abu_pic/slider2.jpg");
+	  }
+	  40% {
+		background-image: url("../img/abu_pic/slider3.jpg");
+	  }
+	  50% {
+		background-image: url("../img/abu_pic/slider4.jpg");
+	  }
+	  60% {
+		background-image: url("../img/abu_pic/slider5.jpg");
+	  }
+	  70% {
+		background-image: url("../img/abu_pic/slider6.jpg");
+	  }
+	  80% {
+		background-image: url("../img/abu_pic/slider7.webp");
+	  }
+	  90% {
+		background-image: url("../img/abu_pic/slider8.jpg");
+	  }
+	  100% {
+		background-image: url("../img/abu_pic/slider9.png");
+	  }
+}
+
+@keyframes slide {
+	0% {
+		background-image: url("../img/abu_pic/slider.jpg");
+	  }
+	  10% {
+		background-image: url("../img/abu_pic/slider.jpg");
+	  }
+	  20% {
+		background-image: url("../img/abu_pic/slider1.jpg");
+	  }
+	  30% {
+		background-image: url("../img/abu_pic/slider2.jpg");
+	  }
+	  40% {
+		background-image: url("../img/abu_pic/slider3.jpg");
+	  }
+	  50% {
+		background-image: url("../img/abu_pic/slider4.jpg");
+	  }
+	  60% {
+		background-image: url("../img/abu_pic/slider5.jpg");
+	  }
+	  70% {
+		background-image: url("../img/abu_pic/slider6.jpg");
+	  }
+	  80% {
+		background-image: url("../img/abu_pic/slider7.webp");
+	  }
+	  90% {
+		background-image: url("../img/abu_pic/slider8.jpg");
+	  }
+	  100% {
+		background-image: url("../img/abu_pic/slider9.png");
+	  }
+}
 
 
 body {
