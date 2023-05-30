@@ -5,9 +5,7 @@
 html{
 	background: url("../img/img.jpg") no-repeat center center fixed;
 	background-size: cover;
-
-	}
-
+}
 
 body {
 	display: flex;
@@ -15,7 +13,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	height: 85vh;
+	height: 100vh;
 	margin: -20px 0 50px;
 	padding: 0 20px;
 }
@@ -25,12 +23,11 @@ h1 {
 	margin: 0;
 }
 
-.header {
+h2 {
 	text-align: center;
 	color :#00a700;
 	font-weight: bold;
-	font-size: 25px;
-	text-shadow: 2px 2px #000000;
+	font-size: 20px;
 }
 
 p {
@@ -81,13 +78,6 @@ button:hover {
 	background-color: #fff;
 	color: #00a700;
 }
-.t-links{
-	font-weight: bold;
-}
-.t-links:hover{
-	color: #00a700;
-	font-weight: bold;
-}
 
 form {
 	background-color: #ffffffe7;
@@ -96,10 +86,8 @@ form {
 	justify-content: center;
 	flex-direction: column;
 	padding: 0 50px;
-	text-align: center;
-}
-.login{
 	height: 100%;
+	text-align: center;
 }
 .hidden{
 	display: none;
@@ -331,7 +319,6 @@ footer a {
 	footer{
 		display: none;
 	}
-	
 }
 @media screen and (min-width:500px){
 	.overlay-container{
@@ -341,8 +328,5 @@ footer a {
 		display: none;
 		height: 0px;
 		width: 0;
-	}
-	.hide{
-		display: none;
 	}	
 }

@@ -11,7 +11,7 @@
     
 </head>
 <body>
-    <!-- $(if chap-id)
+    $(if chap-id)
     <form name="sendin" action="$(link-login-only)" method="post">
         <input type="hidden" name="username" />
         <input type="hidden" name="password" />
@@ -28,9 +28,9 @@
             document.sendin.submit();
             return false;
         }
-    
+    //-->
     </script>
-    $(endif) -->
+    $(endif)
 
     <div style="margin:10px auto";>$(if trial == 'yes')Free trial available, <a style="color: #FF8080"href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif)<p align="center">
 

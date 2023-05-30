@@ -1,3 +1,0 @@
-# Abu hotspot captive poortal
-
-

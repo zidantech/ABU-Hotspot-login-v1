@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="expires" content="-1" />
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/style_n.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 </head>
 <body>
-    <!-- $(if chap-id)
-    <form name="sendin" action="$(link-login-only)" method="post">
+    $(if chap-id)
+    <form class="hidden" name="sendin" action="$(link-login-only)" method="post">
         <input type="hidden" name="username" />
         <input type="hidden" name="password" />
         <input type="hidden" name="dst" value="$(link-orig)" />
@@ -21,16 +21,16 @@
 
     <script type="text/javascript" src="/md5.js"></script>
     <script type="text/javascript">
-        <!--
+        
         function doLogin() {
             document.sendin.username.value = document.login.username.value;
             document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
             document.sendin.submit();
             return false;
         }
-    
+        
     </script>
-    $(endif) -->
+    $(endif)
 
     <div style="margin:10px auto";>$(if trial == 'yes')Free trial available, <a style="color: #FF8080"href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif)<p align="center">
 
@@ -38,8 +38,7 @@
     <h2 class="header">AHMADU BELLO UNIVERSITY ZARIA INTERNET SERVICE</h2>
     <div class="container" id="container">
         <div class="form-container sign-in-container">
-
-            <form name="login" class="login" action="$(link-login-only)" method="post"
+            <form name="login" action="$(link-login-only)" method="post"
                 $(if chap-id) onSubmit="return doLogin()" $(endif)>
                 <input type="hidden" name="dst" value="$(link-orig)" />
                 <input type="hidden" name="popup" value="true" />
@@ -50,12 +49,10 @@
                 <a href="http://172.16.50.3/user" class="t-links">Change your password</a>
                 <a href="https://nis-helpdesk.abu.edu.ng/" class="t-links hide">For New users</a>
                 <button>Sign In</button>
-                <div> $(if error)<br />
-                    <div style="color: #FF8080; font-size: 15px">$(error)</div>
-                    $(endif)
-                </div>      
+                <!--<button class="btn btn-info" type="button">Login</button>-->
+                <!-- <input type="image" src="button.png"/> -->
+                <div class="error"> $(if error)<br /><div style="color: #FF8080; font-size: 9px">$(error)</div>$(endif)	</div>      
             </form>
-
         </div>
 
         <div class="overlay-container">
@@ -63,9 +60,11 @@
                 <div class="overlay-panel overlay-right">
                     <div class="Logo">
                         <img src="img/abu_logo.png" alt="ABU Logo">
+                        <!-- <marquee><p style="font-size: 20px; color: #EE9A4D">!!! KNOWLEDGE FOR SELF RELIANCE !!!</p></marquee>-->
+                        <!-- <h2 class="text-center" style="color: #fff">NECO NIGERIA INTERNET SERVICE</h2> -->
                     </div>
                     <div class="col-sm-3 text-justify text-" style="color: #fff">
-
+                        <!-- <strong><u>Disclaimer!!!</u></strong> -->
                         <marquee id="marque" behavior="scroll" scrollamount="3.0" style="list-style-position:inside;"  direction="up" onmouseover="this.stop();" onmouseout="this.start();">
                             <p class="marquee-H" style="color: red;">NOTICE</p>
 
@@ -94,18 +93,12 @@
                     <div class="links">
                         <a href="https://portal.abu.edu.ng/" class="link-btn" target="_blank">STUDENT PORTAL</a>
                         <a href="https://nis-helpdesk.abu.edu.ng/" class="link-btn" target="_blank">INTERNET REQUEST</a>
-                        <a href="https://mail.abu.edu.ng/" class="link-btn" target="_blank">UNIVERSITY MAIL</a>
+                        <a href="https://mail.abu.edu.ng/" class="link-btn" target="_blank">ABU MAIL</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
 </body>
 <footer>
     <p>© 2023 All Rights Reseverd | <a class="ftr" href="https://abu.edu.ng/">Ahmadu Bello University Zaria</a>  | <a class="ftr" href="https://iaiict.abu.edu.ng/">Network Infrastructure $ Security (NIS)</a></p>
